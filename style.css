@@ -1,0 +1,11 @@
+p a{
+    text-decoration: none;
+    color: gray;
+}
+
+p a:hover {
+    color: black;
+}
+p a:active {
+    color: gray;
+}
