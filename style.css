@@ -20,4 +20,13 @@ p a:active {
     margin: auto;
     margin: 0 20px ;
 }
-
+a {
+    color: #000000;
+  }
+  a:visited {
+    color: #000000;
+  }
+  a:hover, a:active, a:focus {
+    color:#000000;
+  }
+  
