@@ -1,3 +1,4 @@
+/* FOR LINKS */
 p a{
     text-decoration: none;
     color: gray;
@@ -8,4 +9,14 @@ p a:hover {
 }
 p a:active {
     color: gray;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+}
+.card {
+    width: 90%;
+    margin: auto;
+    margin: 0 20px ;
 }
