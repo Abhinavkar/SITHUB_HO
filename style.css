@@ -11,12 +11,13 @@ p a:active {
     color: gray;
 }
 
-/* CARDS */
-.cards {
+/* CLUB CARDS */
+.club-cards {
     display: flex;
 }
-.card {
+.club-card {
     width: 90%;
     margin: auto;
     margin: 0 20px ;
 }
+
