@@ -80,8 +80,13 @@
           <button type="button" class="btn btn-link px-2 me-3">
             Contact Us
           </button>
-          <a href="pages\login.html" target="/blank">
-            <button type="button" class="btn px-3 me-3 btn-secondary">
+          <a href="https://sithub.us.auth0.com/api/v2/" target="/blank">
+            <button
+            id="btn-login"
+                  disabled="true"
+                  class="btn btn-outline-light login-btn"
+                  onclick="login()"
+            type="button" >
               Login
             </button>
           </a>
@@ -107,7 +112,17 @@
 
 
   <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+
+
+   <!-- Optional JavaScript -->
+   <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+   <script src="js/autho.js"></script>
+   <script defer src="js/jquery-3.3.1.min.js"></script>
+   <script defer src="js/bootstrap.min.js"></script>
+   <script defer src="js/slick.min.js"></script>
+   <script defer src="js/circular.js"></script>
+   <script defer src="js/custom.js"></script>
+   <script src="js\autho.js"></script>
 </body>
 
 </html>
