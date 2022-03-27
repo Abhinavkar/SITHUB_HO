@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SITHUB | HOME</title>
   <link rel="icon" href="icons\favicon.png" type="image/icon type">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <link href="icons\MIDPART.css" rel="stylesheet" />
 <!-- Font Awesome -->
@@ -24,11 +24,10 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-topnavbar-light bg-light">
     <!-- Container wrapper -->
-    <div class="container">
+    <div id="navbar" class="container">
       <!-- Navbar brand -->
       <a class="navbar-brand me-2" href="#">
-        <img src="icons\favicon.png" height="45" alt="MDB Logo"
-          loading="lazy" style="margin-top: -1px;" />
+        <img src="icons\favicon.png" height="45" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
       </a>
 
       <!-- Toggle button -->
@@ -125,8 +124,6 @@
   body end
 -->
 
-
-  
   <div class="container">
     <footer class="footer">
       <p class="text-center text-muted">© 2022 Made with ❤️ by <a href="https://github.com/nileshkr17">Team iNiT</a></p>
@@ -135,17 +132,28 @@
 
 
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () {
+      myFunction()
+    };
 
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
 
-   <!-- Optional JavaScript -->
-   <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
-   <script src="js/autho.js"></script>
-   <script defer src="js/jquery-3.3.1.min.js"></script>
-   <script defer src="js/bootstrap.min.js"></script>
-   <script defer src="js/slick.min.js"></script>
-   <script defer src="js/circular.js"></script>
-   <script defer src="js/custom.js"></script>
-   <script src="js\autho.js"></script>
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
 </body>
 
 </html>
