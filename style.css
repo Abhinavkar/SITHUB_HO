@@ -22,6 +22,18 @@ p a:active {
     margin: auto;
     margin: 0 20px;
 }
+<<<<<<< HEAD
+a {
+    color: #000000;
+  }
+  a:visited {
+    color: #000000;
+  }
+  a:hover, a:active, a:focus {
+    color:#000000;
+  }
+  
+=======
 
 
 .headings {
@@ -53,3 +65,4 @@ p a:active {
     text-decoration: none;
     color: #555;
 }
+>>>>>>> 290eef65aa715849877c8333c2d5d0ea1b8cd1f1
